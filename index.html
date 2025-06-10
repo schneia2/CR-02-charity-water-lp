@@ -1,47 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Water Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Charity: Water - Be the Generation</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Proxima+Nova:wght@400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Avenir:wght@400;700&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Avenir', 'Proxima Nova', sans-serif;
+      background-color: #ffffff;
+      color: #1c1c1c;
+    }
+
+    header {
+      background-color: #003366; /* Updated Brand Blue */
+      color: white;
+      text-align: center;
+      padding: 4rem 1rem;
+      /* Add the Ethiopia image as a background */
+      background-image: url(https://cdn2.dropmarkusercontent.com/52043/53daed2f001dfe86e866105be426ce508e47d57d379005863be54ab73081becc/5017_Ethiopia_2019_CG-.jpg?Expires=1749578101&Signature=Zlh8bwt4qGTUnjBEOKgP08SnIcaA~28fDdvskb3C6o9Ml4Pa3rRtHdRe6IXP86KTc9-8uwoCOaFvn5cl7TCbEFmsftWJPMc-J4Y2Ae~Fy7iCGLHr59e5SwhrBuTKwyKeAK3OpOANFBKxXv22Cr8bp2w9TDj0dz7DPIuG8U6DFB1wuOxxDAJP6egg06ftiBukt5xiW7ZMzgNK~6xLPHteHn2ajDJtxEZSj5GAHN-urxseo-V0IyyMR9OehvFe65ERPNMcFZ6HRKqH9ohkyydHUVgZnsqt-J0Wc8dOKW-D9svkuY9SYvBwpQDIqwRmu79t9lkrCFC-~fRaj9L-IgRptA__&Key-Pair-Id=APKAITQYWVEN757ZA4KQ);
+      background-size: cover;      /* Make the image cover the header */
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat;
+      /* Add a dark overlay for better text readability */
+      position: relative;
+    }
+    header::before {
+      /* This creates a semi-transparent overlay */
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 51, 102, 0.6); /* dark blue overlay */
+      z-index: 0;
+    }
+    header > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+    }
+
+    .cta-button {
+      background-color: #FFC907; /* Brand Yellow */
+      border: 2px solid #FFC907;
+      padding: 0.75rem 2rem;
+      font-size: 1rem;
+      color: #003366;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: transparent;
+      color: #FFC907;
+      border: 2px solid #FFC907;
+    }
+
+    main {
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .secondary-cta {
+      margin-top: 1rem;
+      display: inline-block;
+      color: #003366;
+      font-weight: bold;
+      text-decoration: none;
+      border: 2px solid #003366;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+
+    .secondary-cta:hover {
+      background-color: #003366;
+      color: white;
+    }
+  </style>
 </head>
 <body>
-    <!-- Hero Section: This is the main banner at the top of the page -->
-    <section class="hero">
-        <!-- Main headline -->
-        <h1>Clean Water for Everyone</h1>
-        <!-- Subheadline -->
-        <p>Join us in bringing safe, clean water to communities in need.</p>
-    </section>
+  <header>
+    <h1>Be the Generation That Ends the Water Crisis</h1>
+    <p>771 million people live without clean water. Your action fuels real change—and turns the promise of access into reality.</p>
+    <button class="cta-button">Fuel the Change</button>
+  </header>
 
-    <!-- Story Section: This tells the story of the nonprofit -->
-    <section class="story">
-        <h2>Our Story</h2>
-        <p>
-         
-    </section>
-
-    <!-- Real-World Impact Story Section -->
-    <section class="impact-story">
-        <!-- Section headline -->
-        <h2>Real Impact: Meet Amina</h2>
-        <!-- Container for image and text -->
-        <div class="impact-content">
-            <!-- Impact image -->
-            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Amina smiling with clean water" class="impact-image">
-            <!-- Impact story text -->
-            <p>
-                Amina used to walk miles every day to collect water for her family. Thanks to your support, her village now has a clean water well. Amina can go to school and her family is healthier and happier.
-            </p>
-        </div>
-    </section>
-
-    <!-- Call-to-Action Section: This encourages visitors to take action -->
-    <section class="call-to-action">
-        <h2>Make a Difference</h2>
-        <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
-        <a href="#" class="donate-button">Donate Now</a>
-    </section>
+  <main>
+    <h2>See the Real Impact of Charity: Water</h2>
+    <p>We work to empower college activists to take direct, meaningful action against the global water crisis. By connecting your passion with real-world solutions, we turn advocacy into impact—bringing clean, safe water to the 771 million people still living without it.</p>
+    <!-- Changed the link to go to donate.html -->
+    <a href="donate.html" class="secondary-cta">See our Impact</a>
+  </main>
 </body>
 </html>

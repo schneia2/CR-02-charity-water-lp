@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Donate - Charity: Water</title>
+  <!-- Import the same fonts as index.html -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Proxima+Nova:wght@400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Avenir:wght@400;700&display=swap');
+
+    body {
+      font-family: 'Avenir', 'Proxima Nova', sans-serif;
+      background: #f4f8fb;
+      margin: 0;
+      padding: 0;
+      /* Remove text-align: center so columns align left */
+    }
+
+    /* Container for the two columns */
+    .split-container {
+      width: 90%;
+      max-width: 900px;
+      margin: 2rem auto;
+      display: flex;
+      gap: 2rem;
+      justify-content: center; /* Center the columns in the page */
+    }
+
+    /* Left column: personal story */
+    .story-section {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(46, 157, 247, 0.07);
+      padding: 2rem 1rem;
+      flex: 1; /* Take up equal space */
+      min-width: 220px;
+      max-width: 350px;
+      /* For beginners: this is the left side */
+    }
+
+    /* Right column: donation options */
+    .donation-options {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(46, 157, 247, 0.07);
+      padding: 2rem 1rem;
+      flex: 1; /* Take up equal space */
+      min-width: 220px;
+      max-width: 350px;
+      /* Center the content inside the donation box */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .donation-options form {
+      /* Center the form elements */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    h1 {
+      color: #003366; /* Use the same dark blue as index.html */
+      margin-top: 0;
+      font-size: 1.7rem;
+      text-align: center;
+    }
+
+    .story-title {
+      color: #003366; /* Use the same dark blue as index.html */
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .bio-placeholder {
+      background: #eaf6fb;
+      border-radius: 6px;
+      padding: 1rem;
+      min-height: 80px;
+      color: #555;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .donation-options label {
+      display: block;
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+      width: 100%;
+      text-align: left;
+      max-width: 200px;
+    }
+    .donate-btn {
+      background: #FFC907; /* Use the same yellow as index.html */
+      color: #003366;      /* Use the same dark blue as index.html */
+      border: 2px solid #FFC907; /* Match index.html button border */
+      padding: 0.75rem 2rem;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 1rem;
+      margin-top: 1rem;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .donate-btn:hover {
+      background: transparent;
+      color: #FFC907;
+      border: 2px solid #FFC907;
+    }
+
+    /* Responsive: stack columns on small screens */
+    @media (max-width: 700px) {
+      .split-container {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      .story-section,
+      .donation-options {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Container holds both columns -->
+  <div class="split-container">
+    <!-- Left: Personal Story -->
+    <div class="story-section">
+      <div class="story-title">Meet: Abel</div>
+      <!-- Add Abel's photo below the title and above the bio -->
+      <img 
+        src="https://cdn2.dropmarkusercontent.com/52043/5938a755f792e37ab8cbc94c5d3230537eba586f1cbea8f54599567b83672682/4996_Ethiopia_2019_CG-.jpg?Expires=1749581144&Signature=P188Sk7MzMkjilbHDAGYpDZ6CV8SnGi4gOeMtZRutdbjhWm7KsvohPI2efqbhpy3UUXYKNJKQ4UeD-FKKrNzOg98bfDSAyYt2xAhIR8v1Etvy5zliwqJVO4iW5h6VQlHkvsO6100bgKe0x3hAJtI~WOe4gqHzILhl5IBFEiFx46ZFpCcJWKIyW7bMAqMllIM7r0L2glOorlMtlq4oVWVbaSmJzS~yiO9uGzvJByfr1G8WVDuXvehOqU8R3mCRrmLRB-SxvXUoljvaOAO6UlHZKvjRZnfrj-MPNoHnt8R4jjbBTlVEUHoC0DxgEt576G5vxgcofMRg7XxzTZW~hzoxg__&Key-Pair-Id=APKAITQYWVEN757ZA4KQ"
+        alt="Abel from Ethiopia"
+        style="width:100%;max-width:220px;display:block;margin:0 auto 1rem auto;border-radius:8px;"
+      >
+      <div class="bio-placeholder">
+        <!-- Space for a bio. Students can fill this in. -->
+        <em>Abel is an 8-year-old boy from rural Ethiopia. Just a few years ago, his days looked very different. Instead of going to school, he spent hours walking miles to collect dirty water—water that often made him and his family sick. But everything changed when his village got access to clean water, thanks to the support of people like you and the work of charity: water. 
+        Today, Abel is back in school. He dreams of becoming a teacher. He drinks clean water, plays with his friends, and no longer worries about getting sick from the very thing that’s meant to keep him alive. 
+        Clean water didn’t just change his day. It changed his future.
+        You can do the same for another child like Abel.</em>
+      </div>
+    </div>
+    <!-- Right: Donation Options -->
+    <div class="donation-options">
+      <h1>Support Clean Water Projects</h1>
+      <!-- Donation options for users to pick -->
+      <form>
+        <!-- Each label is a donation amount option -->
+        <label>
+          <input type="radio" name="amount" value="10" checked>
+          Donate $10
+        </label>
+        <label>
+          <input type="radio" name="amount" value="25">
+          Donate $25
+        </label>
+        <label>
+          <input type="radio" name="amount" value="50">
+          Donate $50
+        </label>
+        <label>
+          <input type="radio" name="amount" value="100">
+          Donate $100
+        </label>
+        <!-- A button to "donate" (for demo, it just shows an alert) -->
+        <button type="button" class="donate-btn" onclick="alert('Thank you for your support!')">
+          Donate Now
+        </button>
+      </form>
+    </div>
+  </div>
+  <!-- Add a link to go back to the home page -->
+  <p style="text-align:center;"><a href="index.html">Back to Home</a></p>
+</body>
+</html>
